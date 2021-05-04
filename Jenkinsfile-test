@@ -1,0 +1,16 @@
+@Library('shared-lib') _
+
+
+pipeline {
+	agent any
+	stages {
+		stage('Git Checkout') {
+			steps{
+				script{
+                def z = new org.foo.Zot();
+                z.checkOutFrom('test');
+				}
+			}
+		}
+	}
+}
