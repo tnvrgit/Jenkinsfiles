@@ -6,7 +6,9 @@ pipeline {
 	stages {
 		stage('Git Checkout') {
 			steps{
-				gitCheckout('https://github.com/tnvrgit/newmaven');
+				script{
+					echo "Hello World"
+				}
 			}
 		}
 		stage('Git Checkout2') {
