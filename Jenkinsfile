@@ -11,13 +11,5 @@ pipeline {
 				}
 			}
 		}
-		stage('Git Checkout2') {
-			steps{
-				script{
-				def chk = new com.tnvr.gitCheckout();
-				chk.checkOutFrom('https://github.com/tnvrgit/test');
-				}
-			}
-		}
 	}
 }
