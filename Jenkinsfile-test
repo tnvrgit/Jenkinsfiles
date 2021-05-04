@@ -7,8 +7,8 @@ pipeline {
 		stage('Git Checkout') {
 			steps{
 				script{
-                def z = new org.foo.Zot();
-                z.checkOutFrom('test');
+                			def z = new org.foo.Zot();
+                			z.checkOutFrom('test');
 				}
 			}
 		}
